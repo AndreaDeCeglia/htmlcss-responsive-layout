@@ -169,7 +169,6 @@ header a{
 .bene-card{
     background-color: white;
     color: #9593E6;
-    margin-top: 3rem;
 } 
 
 .bene-card h2{
@@ -177,7 +176,36 @@ header a{
 }
 
 .bene-card p{
-    margin-top: 2rem;
+    margin: 2rem 0;
+}
+
+.violet{
+    background-color: #9593E6;
+    color: white;
+}
+
+/* ******** ABOUT US ******* */
+
+#about-us{
+    margin: 3rem 0;
+}
+
+#about-us img{
+    width: 60%;
+    border-radius: 100%;
+    margin: 2rem 0;
+}
+
+#about-us h2{
+    color: #9593E6;
+    font-size: 4rem; 
+    margin: 2rem 0;
+}
+
+#about-us h4{
+    color: #9593E6;
+    font-size: 1.5rem;
+    margin: 2rem 0;
 }
 
 
@@ -220,6 +248,8 @@ header a{
         display: flex;
         flex-wrap: wrap;
     }
+
+    /* ******** ABOUT US ******* */
 
 }
 
@@ -289,6 +319,12 @@ header a{
 
     #benefits .basis-50{
         flex-basis: calc( 100% / 3 );
+    }
+
+    /* ******** ABOUT US ******* */
+
+    #about-us .container-90{
+        display: flex;
     }
 
 }
