@@ -5,6 +5,7 @@
 
 /* *********** HEADER *********** */
 
+/* still to fix */
 /* header{
     position: fixed;
     width: 100%;
@@ -42,18 +43,17 @@ header a{
 } */
 
 
-#demo{
+.card{
     background-color: aquamarine;
+    border-radius: 20px;
+    height: 100%;
+    margin-top: 2rem;
 }
 
-#jumbotron h2{
+/* #jumbotron h2{
     color: white;
     margin: 1rem 0;
-}
-
-#demo{
-    background-color: aqua;
-}
+} */
 
 #demo a{
     width: 80%;
@@ -67,6 +67,27 @@ header a{
 #demo img{
     width: 90%;
 }
+
+.card>span{
+    margin-top: 2rem;
+    color: #297AFE;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.card h2{
+    color: #297AFE;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.card>p{
+    text-align: center;
+    margin: 1rem 0;;
+}
+
+
+
 /* ************************************
          TABLET VERSION
   *********************************** */
