@@ -154,6 +154,33 @@ header a{
 }
 
 
+/* *********** BENEFITS ************* */
+
+#benefits{
+    background-color: #9593E6;
+    color: white;
+    padding: 3rem 0;
+}
+
+#bene-title{
+    text-align: center;
+}
+
+.bene-card{
+    background-color: white;
+    color: #9593E6;
+    margin-top: 3rem;
+} 
+
+.bene-card h2{
+    font-size: 10rem;
+}
+
+.bene-card p{
+    margin-top: 2rem;
+}
+
+
 
 
 
@@ -187,6 +214,12 @@ header a{
 
     /* *********** TESTIMONIALS ********** */
 
+    /* *********** BENEFITS ************* */
+
+    #benefits-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
 }
 
@@ -246,5 +279,16 @@ header a{
     }
 
     /* *********** TESTIMONIALS ********** */
+
+    /* *********** BENEFITS ************* */
+
+    #benefits-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #benefits .basis-50{
+        flex-basis: calc( 100% / 3 );
+    }
 
 }
