@@ -440,7 +440,7 @@ a:hover{
 /* buttons */
 
 .btn{
-    padding: 5px 15px;
+    padding: .8rem 1.5rem;
     text-decoration: none;
     font-size: 12px;
     text-align: center;
@@ -479,6 +479,11 @@ a:hover{
 }
 
 /* container misures */
+
+.container-90{
+    width: 90%;
+    margin: auto;
+}
 
 .container-80{
     width: 80%;
