@@ -95,6 +95,7 @@ header a{
 
 #strategic{
     background-color: #9593E6;
+    padding: 3rem 0;
 }
 
 #strategic img{
@@ -115,6 +116,41 @@ header a{
 #development h2,
 #development p{
     margin: 1rem 0;
+}
+
+#development a{
+    background-color: #9593E6;
+    border-radius: 100%;
+}
+
+#development i{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+
+/* *********** TESTIMONIALS ********** */
+
+#testimonials{
+    padding: 3rem 0;
+}
+
+.test-card{
+    background-color: #9593E6;
+}
+
+.test-card img{
+    width: 50%;
+    border-radius: 100%;
+}
+
+#testimonials h3,
+#testimonials h2,
+#testimonials p,
+#testimonials img,
+#testimonials .test-card{
+    margin: 2rem 0;
+    text-align: center;
 }
 
 
@@ -148,6 +184,8 @@ header a{
     }
 
     /* ******** STRATEGIC ****** */
+
+    /* *********** TESTIMONIALS ********** */
 
 
 }
@@ -193,5 +231,20 @@ header a{
     }
 
     /* ******** STRATEGIC ****** */
+
+    #strategic{
+        padding-bottom: 3rem;
+    }
+
+    #strategic> div{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #development{
+        width: 80%;
+    }
+
+    /* *********** TESTIMONIALS ********** */
 
 }
