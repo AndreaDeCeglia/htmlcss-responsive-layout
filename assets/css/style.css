@@ -3,10 +3,16 @@
   *********************************** */
 
 
-/* HEADER */
+/* *********** HEADER *********** */
+
+/* header{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+} */
 
 nav{
-    background-color: rgb(0, 204, 255);
+    background-color: #297AFE;
 }
 
 header a{
@@ -29,7 +35,38 @@ header a{
 }
 
 
+/* *********** JUMBOTRON ******** */
 
+/* #jumbotron{
+    margin-top: 3rem;
+} */
+
+
+#demo{
+    background-color: aquamarine;
+}
+
+#jumbotron h2{
+    color: white;
+    margin: 1rem 0;
+}
+
+#demo{
+    background-color: aqua;
+}
+
+#demo a{
+    width: 80%;
+    font-size: larger;
+}
+
+#demo i{
+    margin-right: 1rem;
+}
+
+#demo img{
+    width: 90%;
+}
 /* ************************************
          TABLET VERSION
   *********************************** */
@@ -37,7 +74,24 @@ header a{
 
 @media screen and (min-width: 480px) {
 
-    /* HEADER */
+    /* ***** HEADER ***** */
+
+    /* ***** JUMBOTRON ***** */
+
+    #demo img{
+        width: 60%;
+        align-items: baseline;
+    }
+
+    #demo .basis-39{
+        justify-content: flex-start;
+    }
+
+    #jumbotron{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
 }
 
@@ -50,7 +104,7 @@ header a{
 
 @media screen and (min-width: 768px) {
 
-    /* HEADER */
+    /* ***** HEADER ******* */
 
     #burger-menù{
         display: none;
@@ -58,5 +112,18 @@ header a{
 
     #navbar{
         display: flex;
+    }
+
+    /* ****** JUMBOTRON ***** */
+
+    #demo{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #jumbotron{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 }

@@ -64,6 +64,14 @@ a:hover{
     cursor: pointer;
 }
 
+.radius10px{
+    border-radius: 10px;
+}
+
+.radius20px{
+    border-radius: 20px;
+}
+
 /* border */
 
 .border-gray{
@@ -107,6 +115,14 @@ a:hover{
 
 .margin-top10{
     margin-top: 10px;
+}
+
+.margin-top1rem{
+    margin-top: 1rem;
+}
+
+.margin-top2rem{
+    margin-top: 2rem;
 }
 
 /* margin bottom */
@@ -201,6 +217,10 @@ a:hover{
 
 .margin100-0{
     margin: 100px 0;
+}
+
+.margin1rem-0{
+    margin: 1rem 0;
 }
 
 /* padding Xpx 0; */
@@ -369,6 +389,10 @@ a:hover{
 
 .basis1-3{
     flex-basis: calc( 100% / 3 );
+}
+
+.basis2-3{
+    flex-basis: calc( ( 100% / 3 ) * 2 );
 }
 
 .basis1-6{
