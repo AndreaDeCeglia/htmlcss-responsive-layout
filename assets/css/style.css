@@ -35,6 +35,10 @@ header a{
     color: white;
 }
 
+ul#navbar li{
+    margin: 0 5px;
+}
+
 
 /* *********** JUMBOTRON ******** */
 
@@ -139,10 +143,10 @@ header a{
     background-color: #9593E6;
 }
 
-.test-card img{
+/* .test-card img{
     width: 50%;
     border-radius: 100%;
-}
+} */
 
 #testimonials h3,
 #testimonials h2,
@@ -151,6 +155,18 @@ header a{
 #testimonials .test-card{
     margin: 2rem 0;
     text-align: center;
+}
+
+figure.circle-img{
+    height: 100px;
+    width: 100px;
+}
+
+figure.circle-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
 }
 
 
@@ -182,6 +198,10 @@ header a{
 .violet{
     background-color: #9593E6;
     color: white;
+}
+
+a.violet.btn{
+    display: inline-block;
 }
 
 /* ******** ABOUT US ******* */
@@ -224,7 +244,7 @@ header a{
     /* ***** JUMBOTRON ***** */
 
     #demo img{
-        width: 60%;
+        width: 70%;
         align-items: baseline;
     }
 
