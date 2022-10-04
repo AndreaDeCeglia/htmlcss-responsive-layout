@@ -167,14 +167,13 @@ ul#navbar li{
 figure.circle-img{
     height: 200px;
     width: 200px;
-    margin: 2rem 0;
 }
 
 figure.circle-img > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 
@@ -261,7 +260,7 @@ a.violet.btn{
 }
 
 #get-started > div{
-    width: 30%;
+    width: 90%;
     margin: auto;
     padding: 2rem 0;
 }
@@ -296,7 +295,7 @@ footer{
 }
 
 footer > div{
-    width: 25%;
+    width: 80%;
     margin: auto;
     padding: 2rem 0 2rem 0;
     text-align: center;
@@ -347,12 +346,13 @@ footer a{
     #testimonials .flex-column{
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
 
     figure.circle-img{
         height: 200px;
         width: 200px;
-        margin-bottom: 3rem;
+        flex-shrink: 0;
     }
     
     figure.circle-img > img{
@@ -377,7 +377,17 @@ footer a{
 
     /* ****** GET STARTED ****** */
 
+    #get-started div{
+        width: 70%;
+        margin: auto;
+    }
+
     /* ******* FOOTER ****** */
+
+    footer div{
+        width: 65%;
+        margin: auto;
+    }
 
 }
 
@@ -462,7 +472,16 @@ footer a{
 
     /* ****** GET STARTED ****** */
 
+    #get-started div{
+        width: 30%;
+        margin: auto;
+    }
+
     /* ******* FOOTER ****** */
 
+    footer div{
+        width: 25%;
+        margin: auto;
+    }
 
 }
