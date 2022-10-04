@@ -5,12 +5,11 @@
 
 /* *********** HEADER *********** */
 
-/* still to fix */
-/* header{
-    position: fixed;
-    width: 100%;
-    z-index: 99;
-} */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
 
 nav{
     background-color: #297AFE;
@@ -57,7 +56,12 @@ ul#navbar li{
 /* #jumbotron h2{
     color: white;
     margin: 1rem 0;
-} */
+}*/
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
 
 #jumbotron{
     margin-bottom: 4rem;
@@ -143,6 +147,10 @@ ul#navbar li{
     background-color: #9593E6;
 }
 
+#testimonials-header > h2{
+    color: #9593E6;
+}
+
 /* .test-card img{
     width: 50%;
     border-radius: 100%;
@@ -151,15 +159,15 @@ ul#navbar li{
 #testimonials h3,
 #testimonials h2,
 #testimonials p,
-#testimonials img,
 #testimonials .test-card{
     margin: 2rem 0;
     text-align: center;
 }
 
 figure.circle-img{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
+    margin: 2rem 0;
 }
 
 figure.circle-img > img{
@@ -180,6 +188,8 @@ figure.circle-img > img{
 
 #bene-title{
     text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
 }
 
 .bene-card{
@@ -202,6 +212,8 @@ figure.circle-img > img{
 
 a.violet.btn{
     display: inline-block;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
 }
 
 /* ******** ABOUT US ******* */
@@ -211,7 +223,7 @@ a.violet.btn{
 }
 
 #about-us img{
-    width: 60%;
+    width: 80%;
     border-radius: 100%;
     margin: 2rem 0;
 }
@@ -228,6 +240,71 @@ a.violet.btn{
     margin: 2rem 0;
 }
 
+#about-us .image{
+    position: relative;
+}
+
+#about-us .fa-quote-left{
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    font-size: 4rem;
+    color: #9593E6;
+}
+
+/* ****** GET STARTED ****** */
+
+#get-started{
+    background-color: #9593E6;
+    color: white;
+    text-align: center;
+}
+
+#get-started > div{
+    width: 30%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+#get-started span,
+#get-started h3, 
+#get-started h2,
+#get-started p,
+#get-started .btn{
+    margin: 1rem 0;
+}
+
+#get-started #privacy{
+    text-decoration: underline;
+}
+
+#get-started .btn{
+    color: #9593E6;
+    font-size: 2rem;
+}
+
+#get-started h2{
+    color: rgb(243, 220, 91);
+    font-size: 3rem;
+}
+
+/* ******* FOOTER ****** */
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer > div{
+    width: 25%;
+    margin: auto;
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: underline;
+}
 
 
 
@@ -258,9 +335,32 @@ a.violet.btn{
         flex-wrap: wrap;
     }
 
+    .flex-column{
+        display: flex;
+        flex-direction: column;
+    }
+
     /* ******** STRATEGIC ****** */
 
     /* *********** TESTIMONIALS ********** */
+
+    #testimonials .flex-column{
+        display: flex;
+        flex-direction: row;
+    }
+
+    figure.circle-img{
+        height: 200px;
+        width: 200px;
+        margin-bottom: 3rem;
+    }
+    
+    figure.circle-img > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+    }
 
     /* *********** BENEFITS ************* */
 
@@ -269,7 +369,15 @@ a.violet.btn{
         flex-wrap: wrap;
     }
 
+    .basis-50{
+        flex-basis: 50%;
+    }
+
     /* ******** ABOUT US ******* */
+
+    /* ****** GET STARTED ****** */
+
+    /* ******* FOOTER ****** */
 
 }
 
@@ -286,7 +394,7 @@ a.violet.btn{
 @media screen and (min-width: 768px) {
 
     .container-90{
-        width: 60%;
+        width: 70%;
         margin: auto;
     }
 
@@ -311,6 +419,11 @@ a.violet.btn{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+
+    .flex-column{
+        display: flex;
+        flex-direction: column;
     }
 
     /* ******** STRATEGIC ****** */
@@ -346,5 +459,10 @@ a.violet.btn{
     #about-us .container-90{
         display: flex;
     }
+
+    /* ****** GET STARTED ****** */
+
+    /* ******* FOOTER ****** */
+
 
 }
